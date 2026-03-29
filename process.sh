@@ -23,7 +23,7 @@ outfile="${dirbase}/${outname}"
 
 
 # The processing chain of commands
-cat $1 | la_svg2g -s 1000 -f 150 | la_rot -minx | la_pos -x 30 -y 30 | la_dup -n 2 | la_opt  > $TEMP1
+cat $1 | la_svg2g -s 1000 -f 220 | la_rot -minx | la_pos -x 70 -y 70 | la_dup -n 3 | la_opt  > $TEMP1
 
 # Header
 echo "; Processed with LA tools" > $outfile
